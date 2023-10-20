@@ -25,6 +25,8 @@ Al terminar el curso el alumno estará capacitado para:
 
 ## Contenidos
 
+![](images/flujo_general.png){fig-align="center"}
+
 1.  Introducción a R y Lectura de Datos
 2.  Manipulación de Datos Espaciales
 3.  Representación Visual

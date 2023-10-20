@@ -3,6 +3,43 @@ title: "Introducción a R Project"
 subtitle: "Introducción al Lenguaje de Programación"
 ---
 
+![](images/flujo_s1.png){fig-align="center"}
+
+## Motivación
+
+En el mundo del análisis de datos espaciales, R se convierte en tu mejor aliado. Este lenguaje de programación, con su poderosa capacidad de manipulación de datos y una abundancia de paquetes especializados, te abrirá las puertas a muchas posibilidades de análisis. Al aprender R, estarás equipado para explorar, visualizar y modelar datos espaciales de manera efectiva y precisa. El dominio de R te permitirá desbloquear información valiosa a partir de datos geoespaciales, y, además, te proporcionará una ventaja competitiva en un campo en constante crecimiento. El análisis espacial con R te permitirá descubrir patrones, tomar decisiones informadas y hacer contribuciones significativas a tu labor diaria. 
+
+![](images/automatizacion-de-reportes-con-r-web.jpeg){fig-align="center"}
+
+**¿Por qué usar un lenguaje de programción para análisis espacial?**
+
+
+1. Abundancia de paquetes especializados:
+: R cuenta con una amplia gama de paquetes diseñados específicamente para el análisis de datos espaciales, como 'sf', 'sp', 'raster' y 'leaflet'. Esto facilita la implementación de técnicas espaciales sin necesidad de reinventar la rueda.
+
+2. Visualización avanzada: 
+: R ofrece herramientas gráficas de alta calidad para la representación visual de datos espaciales. Paquetes como 'ggplot2' y 'tmap' permiten crear mapas y gráficos personalizados con facilidad.
+
+3. Análisis estadístico y geoespacial integrado: 
+: R combina capacidades estadísticas sólidas con análisis espaciales. Puedes realizar análisis espaciales avanzados, como interpolación, análisis de clusters y modelado de datos geoespaciales, todo en un entorno coherente.
+
+4. Comunidad activa y recursos educativos: 
+: La comunidad R es activa y solidaria. Existe una amplia oferta de recursos educativos, foros y tutoriales en línea que te ayudarán a aprender y resolver problemas de análisis espacial en R.
+
+5. Colaboración interdisciplinaria: 
+: A medida que la ciencia de datos espaciales se integra en diversas disciplinas, dominar R te permitirá colaborar con expertos en campos como geografía, ecología, urbanismo y epidemiología, ampliando tus oportunidades de investigación.
+
+
+6. Reproducibilidad y documentación: 
+: R fomenta la reproducibilidad de tu trabajo. Puedes documentar tus análisis y visualizaciones de manera efectiva, lo que es esencial en proyectos de investigación.
+
+En resumen, aprender R es una inversión valiosa para cualquier profesional que se dedique al análisis de datos espaciales. Te brinda las herramientas necesarias para abordar problemas complejos y contribuir al avance del conocimiento en este campo.
+
+
+
+**Todos los indicadores en el Centro de Inteligencia Territorial UAI se construyeron utilizando herramientas de programación.**
+
+
 ## R Project
 
 ![](images/R_logo.png){fig-align="left" width="100"}
