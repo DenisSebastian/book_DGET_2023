@@ -56,25 +56,41 @@ library(sf) # manipulación de datos vectoriales
 library(mapview) # visualización de mapas dinámicos
 library(ggplot2) # gráficos
 library(RColorBrewer) #paleta de colores
+library(dplyr) # manipulación de tablas
 
 ```
 
 ### Lectura de archivos tipo puntos
 ```{r}
-sii_LC <- st_read("data/sii/sii_urbe_LC.shp")
+mi_comuna <- "LAS CONDES"
+
+sii_LC <- sf::st_read("data/sii/urbes.shp")%>%
+  filter(n_com == mi_comuna) 
 ```
 
 ### Visualización de los puntos
 
 ```{r}
 # Visualización ggplot y sf
-ggplot() +
+LC_points <- ggplot() +
   geom_sf(data = sii_LC, col = "orange", alpha=0.8,  size= 0.5)+
   ggtitle("Datos del SII en Las Condes" ) +
   theme_bw() +
   theme(legend.position="none")+
   theme(panel.grid.major = element_line(colour = "gray80"), 
         panel.grid.minor = element_line(colour = "gray80"))
+LC_points
+```
+
+
+```{r}
+# guardar imagen
+# ggsave(plot = LC_points, 
+       # filename = "images/LC_points_2.png", width = 10)
+```
+
+
+```{r}
 # mapview(sii_LC, zcol = "atractor", cex =2)
 ```
 
@@ -93,14 +109,25 @@ las_condes_red <- readRDS("data/redes/RED_LAS_CONDES.rds")
 
 ### visualización Líneas
 ```{r}
-
-ggplot() +
+LC_red <- ggplot() +
   geom_sf(data = las_condes_red, col = "gray70", alpha=0.8,  size= 0.5)+
   ggtitle("Red víal de la comuna Las Condes" ) +
   theme_bw() +
   theme(legend.position="none")+
   theme(panel.grid.major = element_line(colour = "gray80"), 
         panel.grid.minor = element_line(colour = "gray80"))
+
+LC_red
+```
+
+```{r}
+# guardar imagen
+# ggsave(plot = LC_red, 
+       # filename = "images/LC_red.png", width = 10)
+```
+
+
+```{r}
 # mapview(las_condes_red)
 ```
 
@@ -123,8 +150,7 @@ las_condes_mz <- st_read("data/shape/icv_las_condes.shp", quiet=T)
 ### Visualización polígonos
 
 ```{r}
-
-ggplot() +
+LC_pol <- ggplot() +
   geom_sf(data = las_condes_mz, aes(fill = veg_cob), color ="gray80", 
           alpha=0.8,  size= 0.1)+
   scale_fill_distiller(palette="Greens", direction = 1)+
@@ -132,7 +158,38 @@ ggplot() +
   theme_bw() +
   theme(panel.grid.major = element_line(colour = "gray80"), 
         panel.grid.minor = element_line(colour = "gray80"))
+
+LC_pol
+```
+
+```{r}
+# guardar imagen
+# ggsave(plot = LC_pol, 
+       # filename = "images/LC_pol.png", width = 10)
+```
+
+
+```{r}
 # mapview(las_condes_mz, zcol = "veg_cob")
+```
+
+## Guardar Shapefiles
+
+```{r eval=F}
+# guardar puntos
+st_write(obj = sii_LC, 
+         dsn = "data/shape/points_sii_LC.shp", delete_dsn = T)
+
+# guardar líneas
+st_write(las_condes_red, 
+         dsn ="data/shape/red_LC.shp", delete_dsn = T)
+
+# guardar polígnos
+st_write(las_condes_mz, 
+         dsn ="data/shape/mz_LC.shp", delete_dsn = T)
+
+
+
 ```
 
 

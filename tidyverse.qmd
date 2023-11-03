@@ -127,7 +127,7 @@ rdenar de mayor a menor.
 ::: {.callout-tip appearance="simple"}
 ## Densidad de comercio
 
-Se puede entender como la división de la cantidad de metros cuadrados de comercio dividio por el total de metros cuadrados.
+Se puede entender como la división de la cantidad de metros cuadrados de comercio dividido por el total de metros cuadrados.
 :::
 
 
