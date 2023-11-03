@@ -16,6 +16,7 @@ book:
     - intro_r.qmd
     - variables.qmd
     - funciones.qmd
+    - datos_espaciales.qmd
     # - part: "Tareas"
       # chapters:
         # - trabajo_final.qmd
@@ -25,8 +26,8 @@ book:
   appendices:
     - recursos.qmd
     - control_r.qmd
-    # - tidyverse.qmd
-    # - espacial_r.qmd
+    - tidyverse.qmd
+    - espacial_r.qmd
 
 bibliography: references.bib
 
