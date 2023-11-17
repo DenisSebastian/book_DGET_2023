@@ -1,0 +1,34 @@
+---
+subtitle: "Indicadores Socioeconómicos"
+editor_options: 
+  chunk_output_type: console
+---
+
+# Trabajo Final {.unnumbered}
+
+
+## Antecedentes
+
+- Integrantes: grupal
+
+
+## Instrucciones
+
+
+### Parte 1: Indicadores Socioeconómicos
+
+- Fecha de entrega Cálculos: **26 de Noviembre 2023**
+- Formato: Informe (pdf, word) + Código
+
+1. Calcular los 6 Indicadores Socioenómicos en comuna de su elección  @sec-indsoc. Entregables shapefile con los indicadores comunal. _(25%)_
+
+2. Seleccione **un indicador socioeconómico** que consideren que evidencia una nencesidad prioritaria en la comuna. Realicé representación cartográfica del valor del indicador  a nivel de manzana censal e identifique visualmente si existen concentraciones de valores del indicador altos y/o bajos, haga una descripción del sector basándose en su conocimiento en terreno, experiencia general. _(25%)_
+
+### Parte 2: Presentación en Story Map
+
+- Fecha de Presentación: **17 de Noviembre 2023**
+- Formato: Story Map
+
+1. Desplegar en un Story Map el indicador socioeconómico comunal que anteriormente se calculó, junto con capas capas de información de contexto. Explique los hallazgos importantes e hipótesis sobre los valores generales y/o atípicos que se evidencian en el territorio. _(50%)_
+
+

@@ -18,10 +18,9 @@ book:
     - funciones.qmd
     - datos_espaciales.qmd
     - indicadores.qmd
-    # - part: "Tareas"
-      # chapters:
-        # - trabajo_final.qmd
-
+    - part: "Tareas"
+      chapters:
+        - tarea_final.qmd
     - references.qmd
         
   appendices:
