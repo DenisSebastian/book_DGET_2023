@@ -17,6 +17,7 @@ book:
     - variables.qmd
     - funciones.qmd
     - datos_espaciales.qmd
+    - indicadores.qmd
     # - part: "Tareas"
       # chapters:
         # - trabajo_final.qmd
